@@ -26,8 +26,8 @@ public class NotesController {
 
     // to read single notes, we use GetMapping wit url
     @GetMapping("/notes/{id}")
-    public static String getNotes() {
-        return "I am single notes";
+    public Notes getNotes(@PathVariable Long id) {
+        return notes.getNotes(id);
     }
 
     // to create controller of post type, we use PostMapping with url
