@@ -9,8 +9,6 @@ import lombok.NoArgsConstructor;
 //second option we use lombork, which automatically define the getter and setter
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Notes {
     private Long id;
     private String title;

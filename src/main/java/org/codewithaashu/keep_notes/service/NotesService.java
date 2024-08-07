@@ -63,7 +63,6 @@ public class NotesService {
         // get the update entity into form of modal
         Notes notes = new Notes();// empty modal create
         BeanUtils.copyProperties(notesEntity, notes);// fill data in modal
-        System.out.println(notes);
         return notes;
     }
 
